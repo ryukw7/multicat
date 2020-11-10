@@ -598,7 +598,8 @@ int OpenSocket( const char *_psz_arg, int i_ttl, uint16_t i_bind_port,
         if ( p_ai == NULL )
             return -1;
         memcpy( &connect_addr.ss, p_ai->ai_addr, p_ai->ai_addrlen );
-        freeaddrinfo( p_ai );
+        free(p_ai);
+//        freeaddrinfo( p_ai );
     }
 
     if ( psz_token[0] == '@' )

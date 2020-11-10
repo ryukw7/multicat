@@ -19,11 +19,11 @@ add_executable(multicat
         util.h
         )
 
-add_executable(ingests
-        ingests.c
-        ingests_debug.c
-        )
-
-add_executable(aggregartp
-        aggregartp.c
-        )
+#add_executable(ingests
+#        ingests.c
+#        ingests_debug.c
+#        )
+#
+#add_executable(aggregartp
+#        aggregartp.c
+#        )
